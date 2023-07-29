@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  
+
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+main{
+    display: flex;
+    justify-content: center;
+
+}
+main>img{
+    border-radius: 8px 0 0 8px ;
+    width: 300px;
+}
+.text{
+    background-color: white;
+    border-radius: 0px 8px 8px 0px ;
+    padding: 25px;
+    width: 300px;
+}
+
+@font-face{
+    font-family: "Fraunces";
+    src:url("./fonts/static/Fraunces_144pt-Bold.ttf")
+}
+@font-face{
+    font-family: "Montserrat";
+    src:url("./fonts/Montserrat-VariableFont_wght.ttf")
+}
+
+.head1{
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+.heading{
+    font-family: Fraunces;
+    font-size: 35px;
+    margin: 0px;
+    width: 200px;
+    line-height: 35px;
+}
+.content{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Montserrat;
+    line-height: 20px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    width: 230px;
+}
+.price{
+    word-spacing: 15px;
+}
+.new_price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 30px;
+}
+.old_price{
+    font-family: Montserrat ;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through; 
+    font-size: 14px;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    border-style: none;
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+}
+button>img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+button:hover{
+    background-color :#145A32;
+    
+}
+@media(max-width:700px){
+    main{
+        flex-direction: column;
+        align-content: center;
+    
+    }
+    main>img{
+        content: url("./images/image-product-mobile.jpg");
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        height: auto;
+    }
+    .text{
+        border-radius: 0 0 8px 8px;
+        width: 100%;
+        height: auto;
+        
+    }
+    button{
+        width: 100%;
+        font-size: smaller;
+    }
+    .heading{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        font-size: 14px;
+    }
+
+}
