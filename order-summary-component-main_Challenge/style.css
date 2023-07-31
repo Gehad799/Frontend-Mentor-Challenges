@@ -1,0 +1,73 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "redhat";
+    src:url("./fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    margin: 0px;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    font-family: redhat;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.card{
+    width: 22rem;
+}
+.card-text{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: smaller;
+}
+.card-link1{
+    color: hsl(245, 75%, 52%);
+}
+.card-link1:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.btn{
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    width: 19rem;;
+    
+}
+.btn:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.card-link2{
+    color:hsl(224, 23%, 55%);
+    margin-left: 130px;
+}
+.card-link2:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media(max-width:375px){
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-size: 100% 150px;
+    }
+    .card{
+        width: 20rem;
+        height: 100%;
+    }
+    .btn{
+        width: 17rem;
+    }
+    .plan-card{
+        height: 3rem;
+    }
+}
